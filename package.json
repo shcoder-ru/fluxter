@@ -1,6 +1,6 @@
 {
   "name": "fluxtor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple container of unidirectional data flow.",
   "main": "dist/fluxtor.js",
   "browser:main": "dist/fluxtor-client.js",
