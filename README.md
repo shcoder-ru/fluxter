@@ -2,7 +2,6 @@
 [![npm module downloads](http://img.shields.io/npm/dt/fluxtor.svg)](https://www.npmjs.org/package/fluxtor)
 [![Build Status](https://travis-ci.org/shcoder-ru/fluxtor.svg?branch=master)](https://travis-ci.org/shcoder-ru/fluxtor)
 [![Coverage Status](https://coveralls.io/repos/github/shcoder-ru/fluxtor/badge.svg?branch=master)](https://coveralls.io/github/shcoder-ru/fluxtor?branch=master)
-[![codecov](https://codecov.io/gh/shcoder-ru/fluxtor/branch/master/graph/badge.svg)](https://codecov.io/gh/shcoder-ru/fluxtor)
 [![Dependency Status](https://david-dm.org/shcoder-ru/fluxtor.svg)](https://david-dm.org/shcoder-ru/fluxtor)
 [![Join the chat at https://gitter.im/es-fluxtor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/es-fluxtor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

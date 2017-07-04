@@ -6,4 +6,4 @@ node_js:
   - 6
 install: npm install
 script: npm test
-after_script: "cat ./coverage/lcov.info | coveralls"
+after_script: "cat ${TRAVIS_BUILD_DIR}/coverage/lcov.info | coveralls"
