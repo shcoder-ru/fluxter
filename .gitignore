@@ -1,5 +1,6 @@
 .idea
 *.log
 *.log.*
+*.lcov
 dist
 node_modules
