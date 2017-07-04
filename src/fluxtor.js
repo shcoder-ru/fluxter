@@ -25,7 +25,7 @@ export default class Fluxtor {
 
     /**
      * @constructor
-     * @param {Object=} state
+     * @param {Object=} state - Initial state
      */
     constructor(state = {}) {
         checkArgumentType(state, 'first', 'object');
@@ -39,8 +39,8 @@ export default class Fluxtor {
     /**
      * Add reducer to store
      * @method addReducer
-     * @param {String} stateKey
-     * @param {Function} reducer
+     * @param {String} stateKey - A state field
+     * @param {Function} reducer - A pure function
      *
      * @example
      * store.addReducer('user', (state = {}, actionName, actionData) => {
@@ -67,7 +67,7 @@ export default class Fluxtor {
     /**
      * Add middleware to store
      * @method addMiddleware
-     * @param {Function} middleware
+     * @param {Function} middleware - A middleware function
 
      * @example
      * store.addMiddleware('user', (store, actionName, actionData, next) => {
@@ -89,8 +89,8 @@ export default class Fluxtor {
     /**
      * Add action to store
      * @method addAction
-     * @param {String} actionName
-     * @param {Function} action
+     * @param {String} actionName - An action name
+     * @param {Function} action - An action creator function
      *
      * @example
      * store.addAction('login', (name, password) => ({
@@ -107,8 +107,8 @@ export default class Fluxtor {
     /**
      * Dispatch action to store
      * @method dispatch
-     * @param {String} actionName
-     * @param {...*} args
+     * @param {String} actionName - An action name
+     * @param {...*} args - Arguments that take action
      *
      * @example
      * store.dispatch('login', 'example-name', 'example-password');
@@ -127,10 +127,10 @@ export default class Fluxtor {
     /**
      * Add handler
      * @method subscribe
-     * @param {Function} handler
+     * @param {Function} handler - Change state handler
      *
      * @example
-     * s.subscribe(store => view.setState(store.state));
+     * store.subscribe(store => view.setState(store.state));
      */
     subscribe(handler) {
         checkArgumentType(handler, 'first', 'function');
@@ -142,9 +142,9 @@ export default class Fluxtor {
 /**
  * Call middlewares
  * @function callMiddlewares
- * @param {String} actionName
- * @param {*} actionData
- * @param {Function} done
+ * @param {String} actionName - An action name
+ * @param {*} actionData - An action data
+ * @param {Function} done - Done handler
  * @private
  */
 function callMiddlewares(actionName, actionData, done) {
@@ -169,8 +169,8 @@ function callMiddlewares(actionName, actionData, done) {
 /**
  * Call reducers
  * @function callReducers
- * @param {String} actionName
- * @param {*} actionData
+ * @param {String} actionName - An action name
+ * @param {*} actionData - An action data
  * @private
  */
 function callReducers(actionName, actionData) {

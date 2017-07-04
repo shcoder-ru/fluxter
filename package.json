@@ -1,12 +1,18 @@
 {
   "name": "fluxtor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple container of unidirectional data flow.",
   "main": "dist/fluxtor.js",
   "browser:main": "dist/fluxtor-client.js",
   "jsnext:main": "src/fluxtor.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register tests/**/*.test.js"
+    "build-browser-uncompressed": "webpack --config webpack.config.babel.js",
+    "build-browser-compressed": "webpack -p --config webpack.config.babel.js",
+    "build-babel": "babel src --out-dir dist",
+    "build": "npm run build-babel; npm run build-browser-uncompressed; npm run build-browser-compressed",
+    "test": "mocha --compilers js:babel-core/register tests/**/*.test.js",
+    "make-readme": "jsdoc2md --template README.hbs --files src/fluxtor.js > README.md",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -40,8 +46,13 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",
     "babili": "^0.1.4",
+    "codecov": "^2.2.0",
+    "coveralls": "^2.13.1",
     "cross-env": "^5.0.1",
     "expect": "^1.20.2",
-    "mocha": "^3.4.2"
+    "jsdoc-to-markdown": "^3.0.0",
+    "mocha": "^3.4.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "webpack": "^3.0.0"
   }
 }
