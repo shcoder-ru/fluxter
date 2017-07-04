@@ -4,7 +4,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/shcoder-ru/fluxtor/badge.svg?branch=master)](https://coveralls.io/github/shcoder-ru/fluxtor?branch=master)
 [![Dependency Status](https://david-dm.org/shcoder-ru/fluxtor.svg)](https://david-dm.org/shcoder-ru/fluxtor)
 [![Join the chat at https://gitter.im/es-fluxtor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/es-fluxtor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![view on npm](http://img.shields.io/npm/v/fluxtor.svg)](https://www.npmjs.org/package/fluxtor)
 
 # fluxtor
 Simple container of unidirectional data flow.
@@ -13,6 +12,7 @@ Simple container of unidirectional data flow.
 
 ```
 $ npm install --save fluxtor
+```
 
 ## Classes
 
@@ -171,9 +171,9 @@ Call next middleware or done
 
 **Kind**: global function  
 
-| Param | Type |
-| --- | --- |
-| actionData | <code>\*</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| actionData | <code>\*</code> | An action data |
 
 
 ## Note on Patches/Pull Requests

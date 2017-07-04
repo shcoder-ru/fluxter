@@ -3,11 +3,6 @@
     "es2015",
     "es2017"
   ],
-  "env": {
-    "production": {
-      "presets": ["babili"]
-    }
-  },
   "plugins": [
     "transform-runtime",
     "transform-object-rest-spread"

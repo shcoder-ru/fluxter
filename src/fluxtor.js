@@ -153,7 +153,7 @@ function callMiddlewares(actionName, actionData, done) {
     /**
      * Call next middleware or done
      * @function next
-     * @param {*} actionData
+     * @param {*} actionData - An action data
      */
     function next(actionData) {
         index++;
