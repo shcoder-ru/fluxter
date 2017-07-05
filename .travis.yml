@@ -8,4 +8,5 @@ install: npm install
 script:
   - npm run test
   - npm run coverage
-after_script: "cat ${TRAVIS_BUILD_DIR}/coverage.lcov | coveralls"
+  - cat ./coverage.lcov
+after_script: "cat ./coverage.lcov | coveralls"

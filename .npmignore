@@ -1,9 +1,7 @@
-src
-tmp
-reports
-tests
 node_modules
 .idea
 .editorconfig
-.guitrc
 .gitignore
+.travis.yml
+README.hbs
+webpack.config.babel.js
