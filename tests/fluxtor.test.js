@@ -108,15 +108,25 @@ describe('Fluxtor specs:', function () {
             return state;
         });
 
+        let changeNumber = 0;
         store.subscribe(function (store) {
-            expect(store.state).toEqual({
-                first: {data: 6},
-                second: {data: 2}
-            });
-            done();
+            changeNumber++;
+            if (changeNumber === 1) {
+                expect(store.state).toEqual({
+                    first: {},
+                    second: {}
+                });
+                store.dispatch('action1', 1, 2);
+            } else {
+                expect(store.state).toEqual({
+                    first: {data: 6},
+                    second: {data: 2}
+                });
+                done();
+            }
         });
 
-        store.dispatch('action1', 1, 2);
+        store.dispatch('action2');
 
     });
 
@@ -124,12 +134,16 @@ describe('Fluxtor specs:', function () {
 
         let store = new Fluxtor();
 
-        store.addAction('test', function (first, second) {
+        store.addAction('action1', function (first, second) {
             return {first, second};
         });
 
+        store.addAction('action2', function () {
+            return {};
+        });
+
         store.addMiddleware(function (store, actionName, actionData, next) {
-            if (actionName === 'test') {
+            if (actionName === 'action1') {
                 setTimeout(() => {
                     next({...actionData, first: actionData.first + 5});
                 }, 10);
@@ -139,7 +153,7 @@ describe('Fluxtor specs:', function () {
         });
 
         store.addMiddleware(function (store, actionName, actionData, next) {
-            if (actionName === 'test') {
+            if (actionName === 'action1') {
                 setTimeout(() => {
                     next({...actionData, second: actionData.second + 3});
                 }, 30);
@@ -149,7 +163,7 @@ describe('Fluxtor specs:', function () {
         });
 
         store.addReducer('first', function (state = {}, actionName, actionData) {
-            if (actionName === 'test') {
+            if (actionName === 'action1') {
                 return {
                     ...state,
                     data: actionData.first
@@ -159,20 +173,31 @@ describe('Fluxtor specs:', function () {
         });
 
         store.addReducer('second', function (state = {}, actionName, actionData) {
-            if (actionName === 'test') {
+            if (actionName === 'action1') {
                 return {...state, data: actionData.second};
             }
             return state;
         });
 
+        let changeNumber = 0;
         store.subscribe(function (store) {
-            expect(store.state).toEqual({
-                first: {data: 6},
-                second: {data: 5}
-            });
-            done();
+            changeNumber++;
+            if (changeNumber === 1) {
+                expect(store.state).toEqual({
+                    first: {},
+                    second: {}
+                });
+                store.dispatch('action1', 1, 2);
+            } else {
+                expect(store.state).toEqual({
+                    first: {data: 6},
+                    second: {data: 5}
+                });
+                done();
+            }
         });
-        store.dispatch('test', 1, 2);
+
+        store.dispatch('action2');
 
     });
 
