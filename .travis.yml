@@ -8,5 +8,4 @@ install: npm install
 script:
   - npm run test
   - npm run coverage
-  - cat ./coverage.lcov
-after_script: "cat ./coverage.lcov | coveralls"
+after_script: "codecov"
