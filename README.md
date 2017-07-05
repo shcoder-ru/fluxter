@@ -8,6 +8,8 @@
 # fluxtor
 Simple container of unidirectional data flow.
 
+![Fluxtor data flow](https://rawgithub.com/shcoder-ru/fluxtor/master/fluxtor-data-flow.png)
+
 ## Install
 
 ```
