@@ -22,7 +22,7 @@ let plugins = isProd ? [
     new webpack.optimize.UglifyJsPlugin({
         mangle: true,
         compress: true,
-        include: ['fluxtor.min']
+        include: ['fluxter.min']
     })
 ] : [];
 
@@ -34,7 +34,7 @@ export default {
     devtool: isProd ? false : 'source-map',
     context: srcDir,
     entry: {
-        'fluxtor-client': './fluxtor.js',
+        'fluxter-client': './fluxter.js',
     },
     output: {
         filename: '[name].' + (isProd ? 'min.' : '') + 'js',

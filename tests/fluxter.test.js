@@ -1,11 +1,11 @@
-import Fluxtor from '../src/fluxtor';
+import Fluxter from '../src/fluxter';
 import expect from 'expect';
 
-describe('Fluxtor specs:', function () {
+describe('Fluxter specs:', function () {
 
     it('should change state by action and reducer', function () {
 
-        let store = new Fluxtor();
+        let store = new Fluxter();
 
         store.addAction('action1', function (data) {
             return {data};
@@ -32,7 +32,7 @@ describe('Fluxtor specs:', function () {
 
     it('should change state by action and 2 reducers', function (done) {
 
-        let store = new Fluxtor();
+        let store = new Fluxter();
 
         store.addAction('action1', function (first, second) {
             return {first, second};
@@ -71,7 +71,7 @@ describe('Fluxtor specs:', function () {
 
     it('should change state by action, middleware and 2 reducers', function (done) {
 
-        let store = new Fluxtor();
+        let store = new Fluxter();
 
         store.addAction('action1', function (first, second) {
             return {first, second};
@@ -132,7 +132,7 @@ describe('Fluxtor specs:', function () {
 
     it('should change state by action, 2 middlewares and 2 reducers', function (done) {
 
-        let store = new Fluxtor();
+        let store = new Fluxter();
 
         store.addAction('action1', function (first, second) {
             return {first, second};
@@ -204,7 +204,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if dispatch unspecified action', function () {
 
         expect(function () {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.dispatch('unspecified');
         }).toThrow('Action "unspecified" was not specified.');
 
@@ -213,7 +213,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if first argument of constructor is not object or undefined', function () {
 
         expect(function () {
-            new Fluxtor(false);
+            new Fluxter(false);
         }).toThrow('A first argument must be an object.');
 
     });
@@ -221,7 +221,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if first argument of addReducer is not a string', function () {
 
         expect(function() {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.addReducer();
         }).toThrow('A first argument must be a string.');
 
@@ -230,7 +230,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if second argument of addReducer is not a function', function () {
 
         expect(function () {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.addReducer('fieldname');
         }).toThrow('A second argument must be a function.');
 
@@ -239,7 +239,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if first argument of addMiddleware is not a function', function () {
 
         expect(function () {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.addMiddleware();
         }).toThrow('A first argument must be a function.');
 
@@ -248,7 +248,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if first argument of addAction is not a string', function () {
 
         expect(function () {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.addAction();
         }).toThrow('A first argument must be a string.');
 
@@ -257,7 +257,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if second argument of addAction is not a function', function () {
 
         expect(function () {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.addAction('action-name');
         }).toThrow('A second argument must be a function.');
 
@@ -266,7 +266,7 @@ describe('Fluxtor specs:', function () {
     it('should throw an exception if first argument of subscribe is not a function', function () {
 
         expect(function() {
-            let store = new Fluxtor();
+            let store = new Fluxter();
             store.subscribe();
         }).toThrow('A first argument must be a function.');
 

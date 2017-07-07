@@ -1,10 +1,10 @@
 {
-  "name": "fluxtor",
+  "name": "fluxter",
   "version": "1.0.12",
   "description": "Simple container of unidirectional data flow.",
-  "main": "dist/fluxtor.js",
-  "browser:main": "dist/fluxtor-client.js",
-  "jsnext:main": "src/fluxtor.js",
+  "main": "dist/fluxter.js",
+  "browser:main": "dist/fluxter-client.js",
+  "jsnext:main": "src/fluxter.js",
   "scripts": {
     "build-browser-uncompressed": "webpack --config webpack.config.babel.js",
     "build-browser-compressed": "webpack -p --config webpack.config.babel.js",
@@ -17,12 +17,12 @@
     "coverage-livereload": "livereload ./coverage -e html -w 1000",
     "coverage-watch": "nodemon --watch ./tests --exec 'npm run coverage'",
     "watch": "concurrently 'npm run coverage-watch' 'npm run coverage-server' 'npm run coverage-livereload'",
-    "make-readme": "jsdoc2md --template README.hbs --files src/fluxtor.js > README.md",
+    "readme": "jsdoc2md --template README.hbs --files src/fluxter.js > README.md",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shcoder-ru/fluxtor.git"
+    "url": "git+https://github.com/shcoder-ru/fluxter.git"
   },
   "keywords": [
     "flux",
@@ -40,9 +40,9 @@
   "author": "Vasily Shilov <shcoder.ru@ya.ru> (https://github.com/shcoder-ru)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shcoder-ru/fluxtor/issues"
+    "url": "https://github.com/shcoder-ru/fluxter/issues"
   },
-  "homepage": "https://github.com/shcoder-ru/fluxtor#readme",
+  "homepage": "https://github.com/shcoder-ru/fluxter#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",

@@ -1,19 +1,19 @@
 /**
- *  @fileOverview   Class Fluxtor.
+ *  @fileOverview   Class Fluxter.
  *  @description    Simple container of unidirectional data flow.
  *  @author         Vasily Shilov <shcoder.ru@ya.ru> (https://github.com/shcoder-ru)
- *  @licence        ISC (https://github.com/shcoder-ru/fluxtor/blob/master/LICENSE.txt)
- *  {@link          https://github.com/shcoder-ru/fluxtor GitHub}
- *  {@link          https://www.npmjs.com/package/fluxtor NPM}
+ *  @licence        ISC (https://github.com/shcoder-ru/fluxter/blob/master/LICENSE.txt)
+ *  {@link          https://github.com/shcoder-ru/fluxter GitHub}
+ *  {@link          https://www.npmjs.com/package/fluxter NPM}
  */
 
 /**
- * Class Fluxtor
- * @class Fluxtor
+ * Class Fluxter
+ * @class Fluxter
  * @public
  *
  * @example
- * let store = new Fluxtor({
+ * let store = new Fluxter({
  *     user: {
  *         logged: false,
  *         name: null,
@@ -21,7 +21,7 @@
  *     }
  * });
  */
-export default class Fluxtor {
+export default class Fluxter {
 
     /**
      * @constructor
