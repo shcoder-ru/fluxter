@@ -1,6 +1,6 @@
 {
   "name": "fluxter",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "Simple container of unidirectional data flow.",
   "main": "dist/fluxter.js",
   "browser:main": "dist/fluxter-client.js",
