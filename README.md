@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/shcoder-ru/fluxter.svg?branch=master)](https://travis-ci.org/shcoder-ru/fluxter)
 [![Coverage Status](https://codecov.io/gh/shcoder-ru/fluxter/branch/master/graph/badge.svg)](https://codecov.io/gh/shcoder-ru/fluxter)
 [![Dependency Status](https://david-dm.org/shcoder-ru/fluxter.svg)](https://david-dm.org/shcoder-ru/fluxter)
-[![Join the chat at https://gitter.im/es-fluxter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/es-fluxter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/fluxter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fluxter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # fluxter
 Simple container of unidirectional data flow.
