@@ -1,9 +1,9 @@
 /**
  *  @fileOverview   Class Fluxter.
  *  @description    Simple container of unidirectional data flow.
- *  @author         Vasily Shilov <shcoder.ru@ya.ru> (https://github.com/shcoder-ru)
- *  @licence        ISC (https://github.com/shcoder-ru/fluxter/blob/master/LICENSE.txt)
- *  {@link          https://github.com/shcoder-ru/fluxter GitHub}
+ *  @author         Vasily Shilov <shcoder.ru@ya.ru> (https://github.com/uxter)
+ *  @licence        ISC (https://github.com/uxter/fluxter/blob/master/LICENSE.txt)
+ *  {@link          https://github.com/uxter/fluxter GitHub}
  *  {@link          https://www.npmjs.com/package/fluxter NPM}
  */
 
