@@ -1,6 +1,6 @@
 {
   "name": "fluxter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple container of unidirectional data flow.",
   "main": "dist/fluxter.js",
   "browser:main": "dist/fluxter-client.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shcoder-ru/fluxter.git"
+    "url": "git+https://github.com/uxter/fluxter.git"
   },
   "keywords": [
     "flux",
@@ -37,12 +37,12 @@
     "subscribe",
     "es6"
   ],
-  "author": "Vasily Shilov <shcoder.ru@ya.ru> (https://github.com/shcoder-ru)",
+  "author": "Vasily Shilov <shcoder.ru@ya.ru> (https://github.com/uxter)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shcoder-ru/fluxter/issues"
+    "url": "https://github.com/uxter/fluxter/issues"
   },
-  "homepage": "https://github.com/shcoder-ru/fluxter#readme",
+  "homepage": "https://github.com/uxter/fluxter#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
