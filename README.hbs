@@ -5,8 +5,9 @@
 [![Dependency Status](https://david-dm.org/uxter/fluxter.svg)](https://david-dm.org/uxter/fluxter)
 [![Join the chat at https://gitter.im/fluxter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fluxter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# fluxter
-Simple container of unidirectional data flow.
+# <a href="https://github.com/uxter/fluxter"><img src="https://rawgithub.com/uxter/fluxter/master/logo/fluxter-logo-title-245x50.png"></a>
+
+Fluxter is a simple container of unidirectional data flow.
 
 ![Fluxter data flow](https://rawgithub.com/uxter/fluxter/master/fluxter-data-flow.png)
 
