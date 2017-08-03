@@ -179,6 +179,13 @@ Call next middleware or done
 | actionData | <code>\*</code> | An action data |
 
 
+## Example
+<a href="https://github.com/uxter/seawars"><img src="https://rawgithub.com/uxter/seawars/master/logo/seawars-logo-title-316x68.png" style="max-width:100%;"></a>
+
+Online game SeaWars. Example of using [Fluxter](https://github.com/uxter/fluxter).
+
+### :boom: [Try it out](https://uxter.github.io/seawars/) :boom:
+
 ## Note on Patches/Pull Requests
 
 1. Fork the project.
